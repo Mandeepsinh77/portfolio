@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>More Details</title>
+    <style>
+        h3 {
+            /* align-content: center; */
+            /* margin-left: 38%; */
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bolder;
+            color: dimgrey;
+        }
+
+        input,
+        select,
+        textarea {
+            border: 2px solid burlywood;
+            border-radius: 4px;
+            background-color: cyan;
+        }
+
+        #fieldset {
+            background-color: darkkhaki;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset id="fieldset">
+            <legend>Enter Your Details</legend>
+            <fieldset>
+                <legend>Your Name</legend>
+                <div>
+                    <lable>First Name :</lable>
+                    <input type="text">
+
+                    <lable>Middle Name :</lable>
+                    <input type="text">
+
+                    <lable>Last Name :</lable>
+                    <input type="text">
+                </div><br>
+                <div>
+                    <lable>Upload Photo</lable>
+                    <input type="file" accept="image/*">
+                </div>
+            </fieldset><br>
+            <fieldset>
+                <legend>Contact Details</legend>
+                <div>
+                    <lable>Phone No. :</lable>
+                    <input type="number" requared placeholder="+91">
+                </div><br>
+                <div>
+                    <lable>Whats App No. :</lable>
+                    <input type="number">
+                </div> <br>
+                <div>
+                    <lable>Email Id :</lable>
+                    <input type="email" requared placeholder="abc@gmail.com">
+                </div>
+            </fieldset><br>
+            <fieldset>
+                <legend>More About Yourself</legend>
+                <div>
+                    <lable>Gender :</lable>
+                    <input type="radio" name="Gender">Male
+                    <input type="radio" name="Gender">Female
+                    <input type="radio" name="Gender">Other
+                </div><br>
+                <div>
+                    <lable>Favorite Player</lable>
+                    <input type="text">
+                </div><br>
+                <div>
+                    <lable>Your Roll Model</lable>
+                    <input type="text">
+                </div><br>
+                <div>
+                    <lable>Hobbies :</lable>
+                    <input type="checkbox">Singing
+                    <input type="checkbox">Dance
+                    <input type="checkbox">Playing Games
+                    <input type="checkbox">Playing video Games
+                    <input type="checkbox">Traveling
+                </div>
+            </fieldset> <br>
+            <fieldset>
+                <legend>About Your Study</legend>
+                <p>College :</p>
+                <select name="college select" multiple>
+                    <option>Parul University Vadodara</option>
+                    <option>L.D. Ahmadabad</option>
+                    <option>The Maharaja Sayajirao University Vadodara</option>
+                    <option>Marvadi college Rajkot</option>
+                    <option>Birla Visvakarma Mahavidhyalay Anand</option>
+                    <option>Nirma Ahmadabad</option>
+                </select><br><br>
+                <div>
+                    <lable>Interested Subject :</lable><br>
+                    <input type="checkbox">JAVA<br>
+                    <input type="checkbox">C<br>
+                    <input type="checkbox">C++<br>
+                    <input type="checkbox">Pythen
+                </div>
+            </fieldset><br>
+            <fieldset>
+                <legend>Address</legend>
+                <div>
+                    <lable>Address :</lable>
+                    <textarea name="Address"></textarea>
+                </div><br>
+                <div>
+                    <lable>Country :</lable>
+                    <input type="country">
+                    <lable>State :</lable>
+                    <input type="state">
+                    <lable>City :</lable>
+                    <input type="city">
+                </div>
+            </fieldset><br><br>
+            <input type="submit" value="save">
+            <input type="reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
